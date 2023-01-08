@@ -53,7 +53,7 @@ RUN pip3 install --upgrade pip
 RUN pip3 install setuptools
 
 # Install & setup the planutils
-RUN pip3 install planutils --trusted-host pypi.org --trusted-host files.pythonhosted.org
+RUN pip3 install planutils==0.5.8 --trusted-host pypi.org --trusted-host files.pythonhosted.org
 RUN planutils setup
 
 WORKDIR /root
